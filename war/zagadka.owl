@@ -1,0 +1,1242 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.feofan.com:80/rff?83.owl#"
+     xml:base="http://www.feofan.com:80/rff?83.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.feofan.com:80/rff?83.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#где_живёт -->
+
+    <owl:ObjectProperty rdf:about="http://www.feofan.com:80/rff?83.owl#где_живёт"/>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#живёт_в -->
+
+    <owl:ObjectProperty rdf:about="http://www.feofan.com:80/rff?83.owl#живёт_в">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <owl:inverseOf rdf:resource="http://www.feofan.com:80/rff?83.owl#где_живёт"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#курит -->
+
+    <owl:ObjectProperty rdf:about="http://www.feofan.com:80/rff?83.owl#курит">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#покрашен_в -->
+
+    <owl:ObjectProperty rdf:about="http://www.feofan.com:80/rff?83.owl#покрашен_в">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#пьёт -->
+
+    <owl:ObjectProperty rdf:about="http://www.feofan.com:80/rff?83.owl#пьёт">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#разводит -->
+
+    <owl:ObjectProperty rdf:about="http://www.feofan.com:80/rff?83.owl#разводит">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#рядом_с -->
+
+    <owl:ObjectProperty rdf:about="http://www.feofan.com:80/rff?83.owl#рядом_с">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#слева_от -->
+
+    <owl:ObjectProperty rdf:about="http://www.feofan.com:80/rff?83.owl#слева_от"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#джентельмен -->
+
+    <owl:Class rdf:about="http://www.feofan.com:80/rff?83.owl#джентельмен">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#курит"/>
+                <owl:someValuesFrom rdf:resource="http://www.feofan.com:80/rff?83.owl#сигареты"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#разводит"/>
+                <owl:someValuesFrom rdf:resource="http://www.feofan.com:80/rff?83.owl#животное"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#пьёт"/>
+                <owl:someValuesFrom rdf:resource="http://www.feofan.com:80/rff?83.owl#напиток"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#живёт_в"/>
+                <owl:someValuesFrom rdf:resource="http://www.feofan.com:80/rff?83.owl#дом"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Швед"/>
+                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Норвежец"/>
+                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Британец"/>
+                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Датчанин"/>
+                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Немец"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#дом -->
+
+    <owl:Class rdf:about="http://www.feofan.com:80/rff?83.owl#дом">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Второй_дом"/>
+                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Третий_дом"/>
+                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Четвёртый_дом"/>
+                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Первый_дом"/>
+                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Пятый_дом"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#животное -->
+
+    <owl:Class rdf:about="http://www.feofan.com:80/rff?83.owl#животное">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Рыба"/>
+                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Лошадь"/>
+                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Птица"/>
+                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Собака"/>
+                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Кошка"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#живёт_в_Третий_дом -->
+
+    <owl:Class rdf:about="http://www.feofan.com:80/rff?83.owl#живёт_в_Третий_дом">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#пьёт"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Молоко"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#живёт_в"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Третий_дом"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#кто_Британец -->
+
+    <owl:Class rdf:about="http://www.feofan.com:80/rff?83.owl#кто_Британец">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Британец"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#живёт_в"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#покрашен_в"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:oneOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Красный_цвет"/>
+                                        </owl:oneOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Британец"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#кто_Второй_дом -->
+
+    <owl:Class rdf:about="http://www.feofan.com:80/rff?83.owl#кто_Второй_дом">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Второй_дом"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Второй_дом"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#рядом_с"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Третий_дом"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Второй_дом"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#слева_от"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Третий_дом"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#кто_Датчанин -->
+
+    <owl:Class rdf:about="http://www.feofan.com:80/rff?83.owl#кто_Датчанин">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Датчанин"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#пьёт"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Чай"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Датчанин"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#кто_Немец -->
+
+    <owl:Class rdf:about="http://www.feofan.com:80/rff?83.owl#кто_Немец">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Немец"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Немец"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#курит"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Prince"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#кто_Норвежец -->
+
+    <owl:Class rdf:about="http://www.feofan.com:80/rff?83.owl#кто_Норвежец">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Норвежец"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#живёт_в"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#рядом_с"/>
+                                <owl:someValuesFrom>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#покрашен_в"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:oneOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Синий_цвет"/>
+                                                </owl:oneOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Норвежец"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#живёт_в"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Первый_дом"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Норвежец"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#кто_Первый_дом -->
+
+    <owl:Class rdf:about="http://www.feofan.com:80/rff?83.owl#кто_Первый_дом">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Первый_дом"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Первый_дом"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#рядом_с"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Второй_дом"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Первый_дом"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#слева_от"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Второй_дом"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#кто_Третий_дом -->
+
+    <owl:Class rdf:about="http://www.feofan.com:80/rff?83.owl#кто_Третий_дом">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Третий_дом"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#слева_от"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Четвёртый_дом"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Третий_дом"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#рядом_с"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Четвёртый_дом"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Третий_дом"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#кто_Четвёртый_дом -->
+
+    <owl:Class rdf:about="http://www.feofan.com:80/rff?83.owl#кто_Четвёртый_дом">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Четвёртый_дом"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#рядом_с"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Пятый_дом"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Четвёртый_дом"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Четвёртый_дом"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#слева_от"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Пятый_дом"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#кто_Швед -->
+
+    <owl:Class rdf:about="http://www.feofan.com:80/rff?83.owl#кто_Швед">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Швед"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#разводит"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Собака"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Швед"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#курит_Blends -->
+
+    <owl:Class rdf:about="http://www.feofan.com:80/rff?83.owl#курит_Blends">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#курит"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Blends"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#живёт_в"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#рядом_с"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#где_живёт"/>
+                                <owl:someValuesFrom>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#разводит"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:oneOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Кошка"/>
+                                                </owl:oneOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#живёт_в"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#рядом_с"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#где_живёт"/>
+                                <owl:someValuesFrom>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#пьёт"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:oneOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Вода"/>
+                                                </owl:oneOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#курит_Blue_Master -->
+
+    <owl:Class rdf:about="http://www.feofan.com:80/rff?83.owl#курит_Blue_Master">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#курит"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Blue_Master"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#пьёт"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Пиво"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#курит_Dunhill -->
+
+    <owl:Class rdf:about="http://www.feofan.com:80/rff?83.owl#курит_Dunhill">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#живёт_в"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#покрашен_в"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Жёлтый_цвет"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#курит"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Dunhill"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#курит_Pall_Mall -->
+
+    <owl:Class rdf:about="http://www.feofan.com:80/rff?83.owl#курит_Pall_Mall">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#курит"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Pall_Mall"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#разводит"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Птица"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#напиток -->
+
+    <owl:Class rdf:about="http://www.feofan.com:80/rff?83.owl#напиток">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Вода"/>
+                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Молоко"/>
+                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Чай"/>
+                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Пиво"/>
+                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Кофе"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#покрашен_в_Зелёный_цвет -->
+
+    <owl:Class rdf:about="http://www.feofan.com:80/rff?83.owl#покрашен_в_Зелёный_цвет">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#рядом_с"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#покрашен_в"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Белый_цвет"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#слева_от"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#покрашен_в"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Белый_цвет"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#покрашен_в"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Зелёный_цвет"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#пьёт_Кофе -->
+
+    <owl:Class rdf:about="http://www.feofan.com:80/rff?83.owl#пьёт_Кофе">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#живёт_в"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#покрашен_в"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Зелёный_цвет"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#пьёт"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Кофе"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#разводит_Лошадь -->
+
+    <owl:Class rdf:about="http://www.feofan.com:80/rff?83.owl#разводит_Лошадь">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#разводит"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Лошадь"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#живёт_в"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#рядом_с"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#где_живёт"/>
+                                <owl:someValuesFrom>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.feofan.com:80/rff?83.owl#курит"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:oneOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Dunhill"/>
+                                                </owl:oneOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#сигареты -->
+
+    <owl:Class rdf:about="http://www.feofan.com:80/rff?83.owl#сигареты">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Blue_Master"/>
+                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Pall_Mall"/>
+                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Dunhill"/>
+                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Prince"/>
+                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Blends"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#цвет -->
+
+    <owl:Class rdf:about="http://www.feofan.com:80/rff?83.owl#цвет">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Зелёный_цвет"/>
+                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Белый_цвет"/>
+                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Жёлтый_цвет"/>
+                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Красный_цвет"/>
+                    <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Синий_цвет"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#Blends -->
+
+    <owl:NamedIndividual rdf:about="http://www.feofan.com:80/rff?83.owl#Blends"/>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#Blue_Master -->
+
+    <owl:NamedIndividual rdf:about="http://www.feofan.com:80/rff?83.owl#Blue_Master"/>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#Dunhill -->
+
+    <owl:NamedIndividual rdf:about="http://www.feofan.com:80/rff?83.owl#Dunhill"/>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#Pall_Mall -->
+
+    <owl:NamedIndividual rdf:about="http://www.feofan.com:80/rff?83.owl#Pall_Mall"/>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#Prince -->
+
+    <owl:NamedIndividual rdf:about="http://www.feofan.com:80/rff?83.owl#Prince"/>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#Белый_цвет -->
+
+    <owl:NamedIndividual rdf:about="http://www.feofan.com:80/rff?83.owl#Белый_цвет"/>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#Британец -->
+
+    <owl:NamedIndividual rdf:about="http://www.feofan.com:80/rff?83.owl#Британец"/>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#Вода -->
+
+    <owl:NamedIndividual rdf:about="http://www.feofan.com:80/rff?83.owl#Вода"/>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#Второй_дом -->
+
+    <owl:NamedIndividual rdf:about="http://www.feofan.com:80/rff?83.owl#Второй_дом"/>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#Датчанин -->
+
+    <owl:NamedIndividual rdf:about="http://www.feofan.com:80/rff?83.owl#Датчанин"/>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#Жёлтый_цвет -->
+
+    <owl:NamedIndividual rdf:about="http://www.feofan.com:80/rff?83.owl#Жёлтый_цвет"/>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#Зелёный_цвет -->
+
+    <owl:NamedIndividual rdf:about="http://www.feofan.com:80/rff?83.owl#Зелёный_цвет"/>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#Кофе -->
+
+    <owl:NamedIndividual rdf:about="http://www.feofan.com:80/rff?83.owl#Кофе"/>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#Кошка -->
+
+    <owl:NamedIndividual rdf:about="http://www.feofan.com:80/rff?83.owl#Кошка"/>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#Красный_цвет -->
+
+    <owl:NamedIndividual rdf:about="http://www.feofan.com:80/rff?83.owl#Красный_цвет"/>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#Лошадь -->
+
+    <owl:NamedIndividual rdf:about="http://www.feofan.com:80/rff?83.owl#Лошадь"/>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#Молоко -->
+
+    <owl:NamedIndividual rdf:about="http://www.feofan.com:80/rff?83.owl#Молоко"/>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#Немец -->
+
+    <owl:NamedIndividual rdf:about="http://www.feofan.com:80/rff?83.owl#Немец"/>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#Норвежец -->
+
+    <owl:NamedIndividual rdf:about="http://www.feofan.com:80/rff?83.owl#Норвежец"/>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#Первый_дом -->
+
+    <owl:NamedIndividual rdf:about="http://www.feofan.com:80/rff?83.owl#Первый_дом"/>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#Пиво -->
+
+    <owl:NamedIndividual rdf:about="http://www.feofan.com:80/rff?83.owl#Пиво"/>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#Птица -->
+
+    <owl:NamedIndividual rdf:about="http://www.feofan.com:80/rff?83.owl#Птица"/>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#Пятый_дом -->
+
+    <owl:NamedIndividual rdf:about="http://www.feofan.com:80/rff?83.owl#Пятый_дом"/>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#Рыба -->
+
+    <owl:NamedIndividual rdf:about="http://www.feofan.com:80/rff?83.owl#Рыба"/>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#Синий_цвет -->
+
+    <owl:NamedIndividual rdf:about="http://www.feofan.com:80/rff?83.owl#Синий_цвет"/>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#Собака -->
+
+    <owl:NamedIndividual rdf:about="http://www.feofan.com:80/rff?83.owl#Собака"/>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#Третий_дом -->
+
+    <owl:NamedIndividual rdf:about="http://www.feofan.com:80/rff?83.owl#Третий_дом"/>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#Чай -->
+
+    <owl:NamedIndividual rdf:about="http://www.feofan.com:80/rff?83.owl#Чай"/>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#Четвёртый_дом -->
+
+    <owl:NamedIndividual rdf:about="http://www.feofan.com:80/rff?83.owl#Четвёртый_дом"/>
+    
+
+
+    <!-- http://www.feofan.com:80/rff?83.owl#Швед -->
+
+    <owl:NamedIndividual rdf:about="http://www.feofan.com:80/rff?83.owl#Швед"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Blends"/>
+            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Blue_Master"/>
+            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Dunhill"/>
+            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Pall_Mall"/>
+            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Prince"/>
+            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Белый_цвет"/>
+            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Британец"/>
+            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Вода"/>
+            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Второй_дом"/>
+            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Датчанин"/>
+            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Жёлтый_цвет"/>
+            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Зелёный_цвет"/>
+            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Кофе"/>
+            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Кошка"/>
+            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Красный_цвет"/>
+            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Лошадь"/>
+            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Молоко"/>
+            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Немец"/>
+            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Норвежец"/>
+            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Первый_дом"/>
+            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Пиво"/>
+            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Птица"/>
+            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Пятый_дом"/>
+            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Синий_цвет"/>
+            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Собака"/>
+            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Третий_дом"/>
+            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Чай"/>
+            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Четвёртый_дом"/>
+            <rdf:Description rdf:about="http://www.feofan.com:80/rff?83.owl#Швед"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.4) http://owlapi.sourceforge.net -->
+

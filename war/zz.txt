@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+
+  
+<!DOCTYPE rdf:RDF [
+    <!ENTITY qq "http://owl.feofan.com/1#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  
+]>
+
+
+<rdf:RDF xmlns="#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ontologies="http://www.semanticweb.org/yuri/ontologies/2013/4/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:qq="http://owl.feofan.com/1#">
+    <owl:Ontology rdf:about="http://owl.feofan.com/1"/>
+    
+
+
+
+    <owl:ObjectProperty rdf:about="&qq;любит">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+    <owl:Class rdf:about="&qq;девочка">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&qq;Маша"/>
+                            <rdf:Description rdf:about="&qq;Даша"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&qq;любит"/>
+                        <owl:onClass rdf:resource="&qq;мальчик"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+
+    <owl:Class rdf:about="&qq;мальчик">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&qq;Ваня"/>
+                            <rdf:Description rdf:about="&qq;Вася"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&qq;любит"/>
+                        <owl:onClass rdf:resource="&qq;девочка"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <owl:NamedIndividual rdf:about="&qq;Маша">  
+      <qq:любит rdf:resource="&qq;Вася"/>
+ 	<rdf:type rdf:resource="&qq;девочка"/>
+    </owl:NamedIndividual>    
+
+
+    <owl:NamedIndividual rdf:about="&qq;Ваня">
+	<rdf:type rdf:resource="&qq;мальчик"/>        
+    </owl:NamedIndividual>    
+
+    <owl:NamedIndividual rdf:about="&qq;Даша">
+	<rdf:type rdf:resource="&qq;девочка"/>       
+    </owl:NamedIndividual>    
+
+    <owl:NamedIndividual rdf:about="&qq;Вася"> 
+	<rdf:type rdf:resource="&qq;мальчик"/>       
+    </owl:NamedIndividual>
+
+
+
+</rdf:RDF>

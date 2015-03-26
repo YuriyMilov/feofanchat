@@ -1,0 +1,905 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY fish "http://test.feofan.com/fish.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:fish="http://test.feofan.com/fish.owl#">
+    <Ontology rdf:about="http://test.feofan.com/fish.owl">
+        <rdfs:comment>   
+ALBERT EINSTEIN&#39;S RIDDLE 
+
+ARE YOU IN THE TOP 2% OF INTELLIGENT PEOPLE IN THE WORLD? SOLVE THE RIDDLE AND FIND OUT. 
+
+There are no tricks, just pure logic, so good luck and don&#39;t give up. 
+
+1. In a street there are five houses, painted five different colours. 
+2. In each house lives a person of different nationality 
+3. These five homeowners each drink a different kind of beverage, smoke different brand of cigar and keep a different pet. 
+
+THE QUESTION: WHO OWNS THE FISH? 
+
+HINTS 
+
+1. The Brit lives in a red house. 
+2. The Swede keeps dogs as pets. 
+3. The Dane drinks tea. 
+4. The Green house is next to, and on the left of the White house. 
+5. The owner of the Green house drinks coffee. 
+6. The person who smokes Pall Mall rears birds. 
+7. The owner of the Yellow house smokes Dunhill. 
+8. The man living in the centre house drinks milk. 
+9. The Norwegian lives in the first house. 
+10. The man who smokes Blends lives next to the one who keeps cats. 
+11. The man who keeps horses lives next to the man who smokes Dunhill. 
+12. The man who smokes Blue Master drinks beer. 
+13. The German smokes Prince. 
+14. The Norwegian lives next to the blue house. 
+15. The man who smokes Blends has a neighbour who drinks water. 
+
+ALBERT EINSTEIN WROTE THIS RIDDLE EARLY DURING THE 19th CENTURY. HE SAID THAT 98% OF THE WORLD POPULATION WOULD NOT BE ABLE TO SOLVE IT.</rdfs:comment>
+    </Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://test.feofan.com/fish.owl#drinks -->
+
+    <ObjectProperty rdf:about="&fish;drinks">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:range rdf:resource="&fish;Beverage"/>
+        <rdfs:domain rdf:resource="&fish;Man"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://test.feofan.com/fish.owl#has_color -->
+
+    <ObjectProperty rdf:about="&fish;has_color">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:range rdf:resource="&fish;Color"/>
+        <rdfs:domain rdf:resource="&fish;House"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://test.feofan.com/fish.owl#left_of -->
+
+    <ObjectProperty rdf:about="&fish;left_of">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:range rdf:resource="&fish;House"/>
+        <rdfs:domain rdf:resource="&fish;House"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://test.feofan.com/fish.owl#lives_in -->
+
+    <ObjectProperty rdf:about="&fish;lives_in">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:range rdf:resource="&fish;House"/>
+        <rdfs:domain rdf:resource="&fish;Man"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://test.feofan.com/fish.owl#owns -->
+
+    <ObjectProperty rdf:about="&fish;owns">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="&fish;Man"/>
+        <rdfs:range rdf:resource="&fish;Pet"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://test.feofan.com/fish.owl#right_to -->
+
+    <ObjectProperty rdf:about="&fish;right_to">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="&fish;House"/>
+        <rdfs:range rdf:resource="&fish;House"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://test.feofan.com/fish.owl#smokes -->
+
+    <ObjectProperty rdf:about="&fish;smokes">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:range rdf:resource="&fish;Cigar"/>
+        <rdfs:domain rdf:resource="&fish;Man"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://test.feofan.com/fish.owl#Beverage -->
+
+    <Class rdf:about="&fish;Beverage">
+        <equivalentClass>
+            <Class>
+                <oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&fish;water"/>
+                    <rdf:Description rdf:about="&fish;beer"/>
+                    <rdf:Description rdf:about="&fish;milk"/>
+                    <rdf:Description rdf:about="&fish;tea"/>
+                    <rdf:Description rdf:about="&fish;coffee"/>
+                </oneOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://test.feofan.com/fish.owl#Cigar -->
+
+    <Class rdf:about="&fish;Cigar">
+        <equivalentClass>
+            <Class>
+                <oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&fish;Blue_Master"/>
+                    <rdf:Description rdf:about="&fish;Blends"/>
+                    <rdf:Description rdf:about="&fish;Dunhill"/>
+                    <rdf:Description rdf:about="&fish;Prince"/>
+                    <rdf:Description rdf:about="&fish;Pall_Mall"/>
+                </oneOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://test.feofan.com/fish.owl#Color -->
+
+    <Class rdf:about="&fish;Color">
+        <equivalentClass>
+            <Class>
+                <oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&fish;white"/>
+                    <rdf:Description rdf:about="&fish;green"/>
+                    <rdf:Description rdf:about="&fish;yellow"/>
+                    <rdf:Description rdf:about="&fish;red"/>
+                    <rdf:Description rdf:about="&fish;blue"/>
+                </oneOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://test.feofan.com/fish.owl#House -->
+
+    <Class rdf:about="&fish;House">
+        <equivalentClass>
+            <Class>
+                <oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&fish;no-3"/>
+                    <rdf:Description rdf:about="&fish;no-4"/>
+                    <rdf:Description rdf:about="&fish;no-5"/>
+                    <rdf:Description rdf:about="&fish;no-2"/>
+                    <rdf:Description rdf:about="&fish;no-1"/>
+                </oneOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://test.feofan.com/fish.owl#Man -->
+
+    <Class rdf:about="&fish;Man">
+        <rdfs:subClassOf>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <Restriction>
+                        <onProperty rdf:resource="&fish;drinks"/>
+                        <someValuesFrom rdf:resource="&fish;Beverage"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&fish;lives_in"/>
+                        <someValuesFrom rdf:resource="&fish;House"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&fish;owns"/>
+                        <someValuesFrom rdf:resource="&fish;Pet"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&fish;smokes"/>
+                        <someValuesFrom rdf:resource="&fish;Cigar"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://test.feofan.com/fish.owl#Pet -->
+
+    <Class rdf:about="&fish;Pet">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty>
+                    <rdf:Description>
+                        <inverseOf rdf:resource="&fish;owns"/>
+                    </rdf:Description>
+                </onProperty>
+                <someValuesFrom rdf:resource="&fish;Man"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://test.feofan.com/fish.owl#Blends -->
+
+    <NamedIndividual rdf:about="&fish;Blends">
+        <rdf:type rdf:resource="&fish;Cigar"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty>
+                    <rdf:Description>
+                        <inverseOf rdf:resource="&fish;smokes"/>
+                    </rdf:Description>
+                </onProperty>
+                <someValuesFrom>
+                    <Restriction>
+                        <onProperty rdf:resource="&fish;lives_in"/>
+                        <someValuesFrom>
+                            <Class>
+                                <unionOf rdf:parseType="Collection">
+                                    <Restriction>
+                                        <onProperty rdf:resource="&fish;left_of"/>
+                                        <someValuesFrom>
+                                            <Restriction>
+                                                <onProperty>
+                                                    <rdf:Description>
+                                                        <inverseOf rdf:resource="&fish;lives_in"/>
+                                                    </rdf:Description>
+                                                </onProperty>
+                                                <someValuesFrom>
+                                                    <Restriction>
+                                                        <onProperty rdf:resource="&fish;owns"/>
+                                                        <hasValue rdf:resource="&fish;cat"/>
+                                                    </Restriction>
+                                                </someValuesFrom>
+                                            </Restriction>
+                                        </someValuesFrom>
+                                    </Restriction>
+                                    <Restriction>
+                                        <onProperty>
+                                            <rdf:Description>
+                                                <inverseOf rdf:resource="&fish;left_of"/>
+                                            </rdf:Description>
+                                        </onProperty>
+                                        <someValuesFrom>
+                                            <Restriction>
+                                                <onProperty>
+                                                    <rdf:Description>
+                                                        <inverseOf rdf:resource="&fish;lives_in"/>
+                                                    </rdf:Description>
+                                                </onProperty>
+                                                <someValuesFrom>
+                                                    <Restriction>
+                                                        <onProperty rdf:resource="&fish;owns"/>
+                                                        <hasValue rdf:resource="&fish;cat"/>
+                                                    </Restriction>
+                                                </someValuesFrom>
+                                            </Restriction>
+                                        </someValuesFrom>
+                                    </Restriction>
+                                </unionOf>
+                            </Class>
+                        </someValuesFrom>
+                    </Restriction>
+                </someValuesFrom>
+            </Restriction>
+        </rdf:type>
+        <rdfs:comment>10. The man who smokes Blends lives next to the one who keeps cats.</rdfs:comment>
+    </NamedIndividual>
+    
+
+
+    <!-- http://test.feofan.com/fish.owl#Blue_Master -->
+
+    <NamedIndividual rdf:about="&fish;Blue_Master">
+        <rdf:type rdf:resource="&fish;Cigar"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty>
+                    <rdf:Description>
+                        <inverseOf rdf:resource="&fish;smokes"/>
+                    </rdf:Description>
+                </onProperty>
+                <someValuesFrom>
+                    <Restriction>
+                        <onProperty rdf:resource="&fish;drinks"/>
+                        <hasValue rdf:resource="&fish;beer"/>
+                    </Restriction>
+                </someValuesFrom>
+            </Restriction>
+        </rdf:type>
+        <rdfs:comment>12. The man who smokes Blue Master drinks beer. </rdfs:comment>
+    </NamedIndividual>
+    
+
+
+    <!-- http://test.feofan.com/fish.owl#Brit -->
+
+    <NamedIndividual rdf:about="&fish;Brit">
+        <rdf:type rdf:resource="&fish;Man"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="&fish;lives_in"/>
+                <someValuesFrom>
+                    <Restriction>
+                        <onProperty rdf:resource="&fish;has_color"/>
+                        <hasValue rdf:resource="&fish;red"/>
+                    </Restriction>
+                </someValuesFrom>
+            </Restriction>
+        </rdf:type>
+        <rdfs:comment>1. The Brit lives in a red house. </rdfs:comment>
+    </NamedIndividual>
+    
+
+
+    <!-- http://test.feofan.com/fish.owl#Dane -->
+
+    <NamedIndividual rdf:about="&fish;Dane">
+        <rdf:type rdf:resource="&fish;Man"/>
+        <rdfs:comment>3. The Dane drinks tea. </rdfs:comment>
+        <fish:drinks rdf:resource="&fish;tea"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://test.feofan.com/fish.owl#Dunhill -->
+
+    <NamedIndividual rdf:about="&fish;Dunhill">
+        <rdf:type rdf:resource="&fish;Cigar"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty>
+                    <rdf:Description>
+                        <inverseOf rdf:resource="&fish;smokes"/>
+                    </rdf:Description>
+                </onProperty>
+                <someValuesFrom>
+                    <Restriction>
+                        <onProperty rdf:resource="&fish;lives_in"/>
+                        <someValuesFrom>
+                            <Class>
+                                <unionOf rdf:parseType="Collection">
+                                    <Restriction>
+                                        <onProperty rdf:resource="&fish;left_of"/>
+                                        <someValuesFrom>
+                                            <Restriction>
+                                                <onProperty>
+                                                    <rdf:Description>
+                                                        <inverseOf rdf:resource="&fish;lives_in"/>
+                                                    </rdf:Description>
+                                                </onProperty>
+                                                <someValuesFrom>
+                                                    <Restriction>
+                                                        <onProperty rdf:resource="&fish;owns"/>
+                                                        <hasValue rdf:resource="&fish;horse"/>
+                                                    </Restriction>
+                                                </someValuesFrom>
+                                            </Restriction>
+                                        </someValuesFrom>
+                                    </Restriction>
+                                    <Restriction>
+                                        <onProperty>
+                                            <rdf:Description>
+                                                <inverseOf rdf:resource="&fish;left_of"/>
+                                            </rdf:Description>
+                                        </onProperty>
+                                        <someValuesFrom>
+                                            <Restriction>
+                                                <onProperty>
+                                                    <rdf:Description>
+                                                        <inverseOf rdf:resource="&fish;lives_in"/>
+                                                    </rdf:Description>
+                                                </onProperty>
+                                                <someValuesFrom>
+                                                    <Restriction>
+                                                        <onProperty rdf:resource="&fish;owns"/>
+                                                        <hasValue rdf:resource="&fish;horse"/>
+                                                    </Restriction>
+                                                </someValuesFrom>
+                                            </Restriction>
+                                        </someValuesFrom>
+                                    </Restriction>
+                                </unionOf>
+                            </Class>
+                        </someValuesFrom>
+                    </Restriction>
+                </someValuesFrom>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty>
+                    <rdf:Description>
+                        <inverseOf rdf:resource="&fish;smokes"/>
+                    </rdf:Description>
+                </onProperty>
+                <someValuesFrom>
+                    <Restriction>
+                        <onProperty rdf:resource="&fish;lives_in"/>
+                        <someValuesFrom>
+                            <Restriction>
+                                <onProperty rdf:resource="&fish;has_color"/>
+                                <hasValue rdf:resource="&fish;yellow"/>
+                            </Restriction>
+                        </someValuesFrom>
+                    </Restriction>
+                </someValuesFrom>
+            </Restriction>
+        </rdf:type>
+        <rdfs:comment>11. The man who keeps horses lives next to the man who smokes Dunhill.</rdfs:comment>
+        <rdfs:comment>7. The owner of the Yellow house smokes Dunhill. </rdfs:comment>
+    </NamedIndividual>
+    
+
+
+    <!-- http://test.feofan.com/fish.owl#German -->
+
+    <NamedIndividual rdf:about="&fish;German">
+        <rdf:type rdf:resource="&fish;Man"/>
+        <rdfs:comment>13. The German smokes Prince. </rdfs:comment>
+        <fish:smokes rdf:resource="&fish;Prince"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://test.feofan.com/fish.owl#Norwegian -->
+
+    <NamedIndividual rdf:about="&fish;Norwegian">
+        <rdf:type rdf:resource="&fish;Man"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="&fish;lives_in"/>
+                <someValuesFrom>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="&fish;left_of"/>
+                                <someValuesFrom>
+                                    <Restriction>
+                                        <onProperty rdf:resource="&fish;has_color"/>
+                                        <hasValue rdf:resource="&fish;blue"/>
+                                    </Restriction>
+                                </someValuesFrom>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty>
+                                    <rdf:Description>
+                                        <inverseOf rdf:resource="&fish;left_of"/>
+                                    </rdf:Description>
+                                </onProperty>
+                                <someValuesFrom>
+                                    <Restriction>
+                                        <onProperty rdf:resource="&fish;has_color"/>
+                                        <hasValue rdf:resource="&fish;blue"/>
+                                    </Restriction>
+                                </someValuesFrom>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                </someValuesFrom>
+            </Restriction>
+        </rdf:type>
+        <rdfs:comment>9. The Norwegian lives in the first house. </rdfs:comment>
+        <rdfs:comment>14. The Norwegian lives next to the blue house.</rdfs:comment>
+        <fish:lives_in rdf:resource="&fish;no-1"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://test.feofan.com/fish.owl#Pall_Mall -->
+
+    <NamedIndividual rdf:about="&fish;Pall_Mall">
+        <rdf:type rdf:resource="&fish;Cigar"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty>
+                    <rdf:Description>
+                        <inverseOf rdf:resource="&fish;smokes"/>
+                    </rdf:Description>
+                </onProperty>
+                <someValuesFrom>
+                    <Restriction>
+                        <onProperty rdf:resource="&fish;owns"/>
+                        <hasValue rdf:resource="&fish;bird"/>
+                    </Restriction>
+                </someValuesFrom>
+            </Restriction>
+        </rdf:type>
+        <rdfs:comment>6. The person who smokes Pall Mall rears birds. </rdfs:comment>
+    </NamedIndividual>
+    
+
+
+    <!-- http://test.feofan.com/fish.owl#Prince -->
+
+    <NamedIndividual rdf:about="&fish;Prince">
+        <rdf:type rdf:resource="&fish;Cigar"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://test.feofan.com/fish.owl#Swede -->
+
+    <NamedIndividual rdf:about="&fish;Swede">
+        <rdf:type rdf:resource="&fish;Man"/>
+        <rdfs:comment>2. The Swede keeps dogs as pets. </rdfs:comment>
+        <fish:owns rdf:resource="&fish;dog"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://test.feofan.com/fish.owl#beer -->
+
+    <NamedIndividual rdf:about="&fish;beer">
+        <rdf:type rdf:resource="&fish;Beverage"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://test.feofan.com/fish.owl#bird -->
+
+    <NamedIndividual rdf:about="&fish;bird">
+        <rdf:type rdf:resource="&fish;Pet"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://test.feofan.com/fish.owl#blue -->
+
+    <NamedIndividual rdf:about="&fish;blue">
+        <rdf:type rdf:resource="&fish;Color"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://test.feofan.com/fish.owl#cat -->
+
+    <NamedIndividual rdf:about="&fish;cat">
+        <rdf:type rdf:resource="&fish;Pet"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://test.feofan.com/fish.owl#coffee -->
+
+    <NamedIndividual rdf:about="&fish;coffee">
+        <rdf:type rdf:resource="&fish;Beverage"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty>
+                    <rdf:Description>
+                        <inverseOf rdf:resource="&fish;drinks"/>
+                    </rdf:Description>
+                </onProperty>
+                <someValuesFrom>
+                    <Restriction>
+                        <onProperty rdf:resource="&fish;lives_in"/>
+                        <someValuesFrom>
+                            <Restriction>
+                                <onProperty rdf:resource="&fish;has_color"/>
+                                <hasValue rdf:resource="&fish;green"/>
+                            </Restriction>
+                        </someValuesFrom>
+                    </Restriction>
+                </someValuesFrom>
+            </Restriction>
+        </rdf:type>
+        <rdfs:comment>5. The owner of the Green house drinks coffee. </rdfs:comment>
+    </NamedIndividual>
+    
+
+
+    <!-- http://test.feofan.com/fish.owl#dog -->
+
+    <NamedIndividual rdf:about="&fish;dog">
+        <rdf:type rdf:resource="&fish;Pet"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://test.feofan.com/fish.owl#fish -->
+
+    <NamedIndividual rdf:about="&fish;fish">
+        <rdf:type rdf:resource="&fish;Pet"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://test.feofan.com/fish.owl#green -->
+
+    <NamedIndividual rdf:about="&fish;green">
+        <rdf:type rdf:resource="&fish;Color"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty>
+                    <rdf:Description>
+                        <inverseOf rdf:resource="&fish;has_color"/>
+                    </rdf:Description>
+                </onProperty>
+                <someValuesFrom>
+                    <Restriction>
+                        <onProperty rdf:resource="&fish;left_of"/>
+                        <someValuesFrom>
+                            <Restriction>
+                                <onProperty rdf:resource="&fish;has_color"/>
+                                <hasValue rdf:resource="&fish;white"/>
+                            </Restriction>
+                        </someValuesFrom>
+                    </Restriction>
+                </someValuesFrom>
+            </Restriction>
+        </rdf:type>
+        <rdfs:comment>4. The Green house is next to, and on the left of the White house. </rdfs:comment>
+    </NamedIndividual>
+    
+
+
+    <!-- http://test.feofan.com/fish.owl#horse -->
+
+    <NamedIndividual rdf:about="&fish;horse">
+        <rdf:type rdf:resource="&fish;Pet"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://test.feofan.com/fish.owl#milk -->
+
+    <NamedIndividual rdf:about="&fish;milk">
+        <rdf:type rdf:resource="&fish;Beverage"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty>
+                    <rdf:Description>
+                        <inverseOf rdf:resource="&fish;drinks"/>
+                    </rdf:Description>
+                </onProperty>
+                <someValuesFrom>
+                    <Restriction>
+                        <onProperty rdf:resource="&fish;lives_in"/>
+                        <hasValue rdf:resource="&fish;no-3"/>
+                    </Restriction>
+                </someValuesFrom>
+            </Restriction>
+        </rdf:type>
+        <rdfs:comment>8. The man living in the centre house drinks milk. </rdfs:comment>
+    </NamedIndividual>
+    
+
+
+    <!-- http://test.feofan.com/fish.owl#no-1 -->
+
+    <NamedIndividual rdf:about="&fish;no-1">
+        <rdf:type rdf:resource="&fish;House"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty>
+                    <rdf:Description>
+                        <inverseOf rdf:resource="&fish;left_of"/>
+                    </rdf:Description>
+                </onProperty>
+                <allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+            </Restriction>
+        </rdf:type>
+        <rdfs:comment>In a street there are five houses</rdfs:comment>
+        <fish:left_of rdf:resource="&fish;no-2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://test.feofan.com/fish.owl#no-2 -->
+
+    <NamedIndividual rdf:about="&fish;no-2">
+        <rdf:type rdf:resource="&fish;House"/>
+        <rdfs:comment>In a street there are five houses</rdfs:comment>
+        <fish:left_of rdf:resource="&fish;no-3"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://test.feofan.com/fish.owl#no-3 -->
+
+    <NamedIndividual rdf:about="&fish;no-3">
+        <rdf:type rdf:resource="&fish;House"/>
+        <rdfs:comment>In a street there are five houses</rdfs:comment>
+        <fish:left_of rdf:resource="&fish;no-4"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://test.feofan.com/fish.owl#no-4 -->
+
+    <NamedIndividual rdf:about="&fish;no-4">
+        <rdf:type rdf:resource="&fish;House"/>
+        <rdfs:comment>In a street there are five houses</rdfs:comment>
+        <fish:left_of rdf:resource="&fish;no-5"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://test.feofan.com/fish.owl#no-5 -->
+
+    <NamedIndividual rdf:about="&fish;no-5">
+        <rdf:type rdf:resource="&fish;House"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="&fish;left_of"/>
+                <allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+            </Restriction>
+        </rdf:type>
+        <rdfs:comment>In a street there are five houses</rdfs:comment>
+    </NamedIndividual>
+    
+
+
+    <!-- http://test.feofan.com/fish.owl#red -->
+
+    <NamedIndividual rdf:about="&fish;red">
+        <rdf:type rdf:resource="&fish;Color"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://test.feofan.com/fish.owl#tea -->
+
+    <NamedIndividual rdf:about="&fish;tea">
+        <rdf:type rdf:resource="&fish;Beverage"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://test.feofan.com/fish.owl#water -->
+
+    <NamedIndividual rdf:about="&fish;water">
+        <rdf:type rdf:resource="&fish;Beverage"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://test.feofan.com/fish.owl#white -->
+
+    <NamedIndividual rdf:about="&fish;white">
+        <rdf:type rdf:resource="&fish;Color"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://test.feofan.com/fish.owl#yellow -->
+
+    <NamedIndividual rdf:about="&fish;yellow">
+        <rdf:type rdf:resource="&fish;Color"/>
+    </NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&fish;Blends"/>
+            <rdf:Description rdf:about="&fish;Blue_Master"/>
+            <rdf:Description rdf:about="&fish;Brit"/>
+            <rdf:Description rdf:about="&fish;Dane"/>
+            <rdf:Description rdf:about="&fish;Dunhill"/>
+            <rdf:Description rdf:about="&fish;German"/>
+            <rdf:Description rdf:about="&fish;Norwegian"/>
+            <rdf:Description rdf:about="&fish;Pall_Mall"/>
+            <rdf:Description rdf:about="&fish;Prince"/>
+            <rdf:Description rdf:about="&fish;Swede"/>
+            <rdf:Description rdf:about="&fish;beer"/>
+            <rdf:Description rdf:about="&fish;bird"/>
+            <rdf:Description rdf:about="&fish;blue"/>
+            <rdf:Description rdf:about="&fish;cat"/>
+            <rdf:Description rdf:about="&fish;coffee"/>
+            <rdf:Description rdf:about="&fish;dog"/>
+            <rdf:Description rdf:about="&fish;fish"/>
+            <rdf:Description rdf:about="&fish;green"/>
+            <rdf:Description rdf:about="&fish;horse"/>
+            <rdf:Description rdf:about="&fish;milk"/>
+            <rdf:Description rdf:about="&fish;no-1"/>
+            <rdf:Description rdf:about="&fish;no-2"/>
+            <rdf:Description rdf:about="&fish;no-3"/>
+            <rdf:Description rdf:about="&fish;no-4"/>
+            <rdf:Description rdf:about="&fish;no-5"/>
+            <rdf:Description rdf:about="&fish;red"/>
+            <rdf:Description rdf:about="&fish;tea"/>
+            <rdf:Description rdf:about="&fish;water"/>
+            <rdf:Description rdf:about="&fish;white"/>
+            <rdf:Description rdf:about="&fish;yellow"/>
+        </distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+

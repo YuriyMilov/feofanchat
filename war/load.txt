@@ -1,0 +1,6 @@
+<a href=qq?p2=фео>Вернуться к Феофану</a>
+
+ <a href=qq_s?p3=load&p4=1.rul>Сократ</a>
+ <a href=qq_s?p3=load&p4=2.rul>Незнайка</a>
+ <a href=qq_s?p3=load&p4=3.rul>Васька</a>
+</html>

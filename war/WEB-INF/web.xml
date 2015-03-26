@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee                http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+  <!-- Servlets -->
+
+
+  <servlet>
+    <servlet-name>w2f</servlet-name>
+    <servlet-class>guestbook.w2f</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>w2f</servlet-name>
+    <url-pattern>/w2f</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet>
+    <servlet-name>rff</servlet-name>
+    <servlet-class>guestbook.rff</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>rff</servlet-name>
+    <url-pattern>/rff</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet>
+    <servlet-name>qqw2</servlet-name>
+    <servlet-class>guestbook.qqw2</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>qqw2</servlet-name>
+    <url-pattern>/qqw2</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>qqr2</servlet-name>
+    <servlet-class>guestbook.qqr2</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>qqr2</servlet-name>
+    <url-pattern>/qqr2</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>post</servlet-name>
+    <servlet-class>guestbook.post</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>post</servlet-name>
+    <url-pattern>/post</url-pattern>
+  </servlet-mapping>
+  
+
+  <servlet>
+    <servlet-name>qpa1</servlet-name>
+    <servlet-class>para.qpa1</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>qpa1</servlet-name>
+    <url-pattern>/qpa1</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>qp1</servlet-name>
+    <servlet-class>para.qp1</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>qp1</servlet-name>
+    <url-pattern>/qp1</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>owl</servlet-name>
+    <servlet-class>guestbook.owl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>owl</servlet-name>
+    <url-pattern>/owl</url-pattern>
+  </servlet-mapping>
+  
+   
+  <servlet>
+    <servlet-name>qq8</servlet-name>
+    <servlet-class>guestbook.qq8</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>qq8</servlet-name>
+    <url-pattern>/qq8</url-pattern>
+  </servlet-mapping>
+  
+   
+  
+  
+   
+<servlet>
+    <servlet-name>qq_s</servlet-name>
+    <servlet-class>guestbook.qq_s</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>qq_s</servlet-name>
+    <url-pattern>/qq_s</url-pattern>
+  </servlet-mapping>
+  
+   
+  <servlet-mapping>
+    <servlet-name>qq_s</servlet-name>
+    <url-pattern>/qqs</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>qqq</servlet-name>
+    <servlet-class>guestbook.qqq</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>qqq</servlet-name>
+    <url-pattern>/qqq</url-pattern>
+  </servlet-mapping>
+  
+  
+<servlet>
+    <servlet-name>qq6</servlet-name>
+    <servlet-class>guestbook.qq6</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>qq6</servlet-name>
+    <url-pattern>/qq6</url-pattern>
+  </servlet-mapping>
+  
+  
+    
+  
+<servlet>
+    <servlet-name>qq5</servlet-name>
+    <servlet-class>guestbook.qq5</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>qq5</servlet-name>
+    <url-pattern>/qq5</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+ 
+  <servlet>
+    <servlet-name>qqw</servlet-name>
+    <servlet-class>guestbook.qqw</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>qqw</servlet-name>
+    <url-pattern>/qqw</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+    <servlet-name>qq</servlet-name>
+    <servlet-class>guestbook.qq</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>qq</servlet-name>
+    <url-pattern>/qq</url-pattern>
+  </servlet-mapping> 
+ 
+ 
+  <servlet>
+    <servlet-name>qqr3</servlet-name>
+    <servlet-class>guestbook.qqr</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>qqr3</servlet-name>
+    <url-pattern>/contrus.owl</url-pattern>
+  </servlet-mapping>
+  
+  
+    <servlet>
+    <servlet-name>qqr</servlet-name>
+    <servlet-class>guestbook.qqr</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>qqr</servlet-name>
+    <url-pattern>/qqr</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  
+  
+  	
+	<servlet>
+    <servlet-name>xmppreceiver</servlet-name>
+    <servlet-class>guestbook.GreetingChatbot</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>xmppreceiver</servlet-name>
+    <url-pattern>/_ah/xmpp/message/chat/</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>sign</servlet-name>
+  <servlet-class>guestbook.SignGuestbookServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>sign</servlet-name>
+  <url-pattern>/sign</url-pattern>
+</servlet-mapping>
+	
+	
+	<servlet>
+        <servlet-name>guestbook</servlet-name>
+        <servlet-class>guestbook.GuestbookServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>guestbook</servlet-name>
+        <url-pattern>/guestbook</url-pattern>
+    </servlet-mapping>
+	
+	
+	
+	
+	
+  <servlet>
+    <servlet-name>greetServlet</servlet-name>
+    <servlet-class>guestbook.server.GreetingServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>greetServlet</servlet-name>
+    <url-pattern>/feofanchat/greet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>Feofanchat.html</welcome-file>
+  </welcome-file-list>
+
+  <servlet>
+    <servlet-name>SystemServiceServlet</servlet-name>
+    <servlet-class>com.google.api.server.spi.SystemServiceServlet</servlet-class>
+    <init-param>
+      <param-name>services</param-name>
+      <param-value/>
+    </init-param>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>SystemServiceServlet</servlet-name>
+    <url-pattern>/_ah/spi/*</url-pattern>
+  </servlet-mapping>
+
+
+
+  
+  
+<servlet>
+  <servlet-name>mm</servlet-name>
+  <servlet-class>guestbook.mm</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>mm</servlet-name>
+  <url-pattern>/_ah/mail/*</url-pattern>
+</servlet-mapping>
+  
+  
+
+
+<security-constraint>
+  <web-resource-collection>
+    <url-pattern>/_ah/mail/*</url-pattern>
+  </web-resource-collection>
+  <auth-constraint>
+    <role-name>admin</role-name>
+  </auth-constraint>
+</security-constraint>
+
+</web-app>
